@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Targets, Facts and Solutions</title>
+</head>  <!--Sources for Imbedded functions-->
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<style type="text/css">
+  body {
+    background-color: #cfccc4; 
+  }
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  li {
+  font-family: Helvetica Neue;
+    font-size: 17px;
+    justify-content: right;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.p {
+  float: left;
+  width: 40%;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.img {
+  float: left;
+  width: 70%;
+}
+
+.flip-card {
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 400px;
+  float: left;
+  background-color: transparent;
+  width: 173px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: absolute;
+  width: 170px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #cfccc4;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #3f7e44;
+  color: white;
+  transform: rotateY(180deg);
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card1 {
+  margin-left: 50px;
+  float: left;
+  background-color: transparent;
+  width: 183px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: absolute;
+  width: 180px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card1:hover .flip-card-inner1 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front1, .flip-card-back1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+  background-color: #cfccc4;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back1 {
+  background-color: #3f7e44;
+  color: white;
+  transform: rotateY(180deg);
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card2 {
+  margin-left: 50px;
+  float: left;
+  background-color: transparent;
+  width: 194px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner2 {
+  position: absolute;
+  width: 194px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card2:hover .flip-card-inner2 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front2, .flip-card-back2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front2 {
+  background-color: #cfccc4;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back2 {
+  background-color: #3f7e44;
+  color: white;
+  transform: rotateY(180deg);
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card3 {
+  margin-left: 50px;
+  float: left;
+  background-color: transparent;
+  width: 194px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner3 {
+  position: absolute;
+  width: 194px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card3:hover .flip-card-inner3 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front3, .flip-card-back3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front3 {
+  background-color: #cfccc4;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back3 {
+  background-color: #3f7e44;
+  color: white;
+  transform: rotateY(180deg);
+}
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card4 {
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 165px;
+  float: left;
+  background-color: transparent;
+  width: 174px;
+  height: 300px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner4 {
+  position: absolute;
+  width: 174px;
+  height: 300px;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card4:hover .flip-card-inner4 {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front4, .flip-card-back4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front4 {
+  background-color: #cfccc4;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back4 {
+  background-color: #3f7e44;
+  color: white;
+  transform: rotateY(180deg);
+}
+.title {
+  font-family: Helvetica;
+  font-style: bold; 
+  font-size: 50px;
+  justify-content: center;
+  text-align: ;
+  background-color: #cfccc4;
+}
+p {
+  font-family: Montserrat;
+  font-style: bold;
+  justify-content: right;
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+.box {
+  position: absolute;
+  background-color: lightgreen;
+  width: 630px;
+  height: 650px;
+  border: 10px solid green;
+  margin-left: 780px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  border-radius: 15px;
+} 
+.boxes {
+  position: absolute;
+  background-color: lightgreen;
+  width: 400px;
+  height: 400px;
+  border: 10px solid green;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  margin-top: 750px;
+  border-radius: 15px;
+}
+.boxes1 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 400px;
+  height: 400px;
+  border: 10px solid green;
+  margin-top: 750px;
+  margin-left: 520px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.boxes2 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 400px;
+  height: 400px;
+  border: 10px solid green;
+  margin-top: 750px;
+  margin-left: 970px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.boxes3 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 625px;
+  height: 700px;
+  border: 10px solid green;
+  margin-top: 1860px;
+  margin-right: 200px; 
+  margin-left: 70px;
+  margin-bottom: 50px;
+  border-radius: 15px;
+}
+.boxes5 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 625px;
+  height: 700px;
+  border: 10px solid green;
+  margin-top: 1200px;
+  margin-left: 745px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.boxes6 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 625px;
+  height: 610px;
+  border: 10px solid green;
+  margin-top: 1200px;
+  margin-left: 70px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.boxes7 {
+  position: absolute;
+  background-color: lightgreen;
+  width: 625px;
+  height: 610px;
+  border: 10px solid green;
+  margin-top: 1950px;
+  margin-left: 745px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.boxes8 {
+  position: relative;
+  width: 1300px;
+  height: 100%;
+  border: 15px solid black;
+  margin-left:70px; 
+  margin-right:70px;
+  margin-bottom:70px;
+  border-radius: 15px;
+}
+</style>
+<body>
+<img src="sdg 13 grande en.jpeg" style="width: 1440px;">
+<nav class="navbar navbar-expand-sm navbar-dark bg-success sticky-top">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item1">
+      <a class="nav-link" href="#" style="color: white;">Home</a>
+    </li>
+    <li class="nav-item2">
+      <a class="nav-link disabled" href="#" style="color: lightgrey;">Air Pollution & SDG 13</a>
+    </li>
+    <li class="nav-item3">
+      <a class="nav-link" href="#" style="color: white;">How you can help!</a>
+    </li>
+    <li class="nav-item4">
+      <a class="nav-link" href="#" style="color: white;">Help us improve!</a>
+    </li>
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search the Website" id="input">
+      <button class="btn btn-secondary my-2 my-sm-0" type="button">Search</button>
+  </form>
+</nav>
+<div class="title" style="position: absolute; margin-top:30px; margin-left:850px;">
+What is Air Pollution?
+</div>
+<div class="title" style="padding-left: 180px; padding-top: 30px; padding-bottom: 30px;">
+Targets of SDG 13
+</div>
+<div class="flip-card1">
+  <div class="flip-card-inner1">
+    <div class="flip-card-front1">
+      <img src="GOAL_13_TARGET_13.1-174x300.png" alt="Avatar" style="width:174px;height:300px;">
+    </div>
+    <div class="flip-card-back1">
+      <p style="padding-top: 20px; font-size: 22px; text-align: center;">By 2030, Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters in all countries</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card2">
+  <div class="flip-card-inner2">
+    <div class="flip-card-front2">
+      <img src="GOAL_13_TARGET_13.2-183x300.png" alt="Avatar" style="width:183px;height:300px;">
+    </div>
+    <div class="flip-card-back2">
+      <p style="padding-top: 10px; font-size: 25px; text-align: center;">By 2030, Integrate climate change measures into national policies, strategies and planning</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card3">
+  <div class="flip-card-inner3">
+    <div class="flip-card-front3">
+      <img src="GOAL_13_TARGET_13.3-195x300.png" alt="Avatar" style="width:195px;height:300px;">
+    </div>
+    <div class="flip-card-back3">
+      <p style="padding-top: 20px; font-size: 20px;">By 2030, Improve education, awareness-raising and human and institutional capacity on climate change mitigation, adaptation, impact reduction and early warning</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card4">
+  <div class="flip-card-inner4">
+    <div class="flip-card-front4">
+      <img src="GOAL_13_TARGET_13.A-183x300.png" alt="Avatar" style="width:183px;height:300px; margin-bottom: 10px;">
+    </div>
+    <div class="flip-card-back4">
+      <p style="font-size: 12px;">By 2030, Implement the commitment undertaken by developed-country parties to the United Nations Framework Convention on Climate Change to a goal of mobilizing jointly $100 billion annually by 2020 from all sources to address the needs of developing countries in the context of meaningful mitigation actions and transparency on implementation and fully operationalize the Green Climate Fund through its capitalization as soon as possible</p>
+    </div>
+  </div>
+</div>
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="GOAL_13_TARGET_13.B-174x300.png" alt="Avatar" style="width:174px;height:300px; margin-bottom: 10px;">
+    </div>
+    <div class="flip-card-back">
+      <p style="font-size: 12px;">By 2030, Promote mechanisms for raising capacity for effective climate change-related planning and management in least developed countries and small island developing States, including focusing on women, youth and local and marginalized communities. Acknowledging that the United Nations Framework Convention on Climate Change is the primary international, intergovernmental forum for negotiating the global response to climate change.</p>
+    </div>
+  </div>
+</div>
+<div style="margin-left: 80px; position: absolute; margin-top: 2600px;">
+<iframe width="1280" height="745" src="https://www.youtube.com/embed/e6rglsLy1Ys" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="box" style="font-size: 16px;text-align: justify; padding: 5px;">
+  What do we mean by Air Pollution and how is it caused?
+Air pollution is a term used in a wide variety of ways, this is why it’s important to narrow down the definition of air pollution. Air pollution is when harmful substances (pollutants) end up in the atmosphere. This negatively impacts the health of humans, animals and plants. Some of these pollutants are caused naturally by volcanic eruptions, allergens and wildfires. But most pollutants are created as a result of human activities like car and truck exhausts, factories and energy used in agriculture. There are various types of air pollution, the first type which we can examine is greenhouse gases. Greenhouse gasses consist of Carbon Dioxide, Nitrous Oxide and Fluorinated Gases. These pollutants all trap the sun’s heat in the atmosphere which leads to a significant rise in global temperatures (global warming). Another form of air pollution is smog which reduces visibility and comes with significant health effects. There are two types of smog; sulphurous smog is smog caused by sulphur oxides released from burning fossil fuels. While photochemical smog also called ground-level ozone is created when sunlight reacts with nitrogen oxides and volatile organic compounds (chemicals with high vapour pressure). These nitrogen oxides come from car exhausts, coal power plants and emissions from factories. Volatile organic compounds are created from paints, gasoline and other cleaning solvents like acetone. Smog not only reduces visibility but poses serious risks to our health by causing respiratory illnesses and irritating the eye. The next type of air pollution we will discuss is toxic air pollutants. Toxic air pollutants are chemicals like lead, mercury, dioxin and benzene. These chemicals are released during coal and gas combustions which occur when waste is incinerated or gasoline is burned. This type of air pollution is the most detrimental to human health since it can cause cancer, reproductive problems and various birth defects. Overall, we see that air pollution comes in various forms and is mostly caused by human activities.
+</div>
+<div class="title" style="position: absolute; margin-top:660px; margin-left:465px;">
+Air Pollution & SDG 13
+</div>
+<div class="boxes">
+  <img src="https://www.eurekalert.org/multimedia/pub/web/195063_web.jpg" style="width: 360px; margin-left: 10px; margin-top: 10px;">
+</div>
+<div class="boxes1" style="font-size: 10px;">
+  <img src="https://assets.weforum.org/editor/cAdKiN6VwPR1GdNtCnoqARWRPJupdgoBykQfv2drsvU.PNG" style="width: 360px; margin-left: 10px; margin-top: 10px;"> 
+</div>
+<div class="boxes2">
+  <img src="https://miro.medium.com/max/7218/1*qyloeOVxS5h2VSzz0vgpCA.jpeg" style="width: 360px;height: 360px; margin-left: 10px; margin-top: 10px;">
+</div>
+<div class="boxes3" style="font-size: 17.75px;text-align: justify; padding: 5px;">
+  <b>Why is this related to SDG #13 (Climate Action)?</b>
+  <br> 
+Climate action/change and air pollution are closely related to one another, in fact, climate change is partially caused by air pollution. More specifically, greenhouse gases (which are a form of air pollution) are causing climate change. As mentioned before, gases like carbon dioxide and nitrous oxide trap the sun’s heat in the atmosphere. You see, solar radiation which warms up the earth is normally re-radiated back into space. However, when high amounts of greenhouse gases are in the atmosphere, a much smaller portion of this heat is re-radiated into space. Instead, that heat is trapped in the atmosphere, thus increasing the temperature and causing global warming. These gases are able to trap heat because they absorb energy from infrared (IR) radiation. After the heat has been absorbed, the gases’ molecules start vibrating. After some time, they give off that energy by emitting a photon (the energy/heat goes back to the earth and increases the temperature). In essence, taking climate action is the same as acting on air pollution since we must solve air pollution before solving climate change. Another way which the two are related is that global warming actually worsens air pollution. This is because warmer weather (a result of climate change) raises the pollutants from low altitudes to higher altitudes. This occurs when warm air on the surface of the earth rises and cooler, heavier air sinks towards the surface. With the rising warm air, pollutants are carried to the atmosphere causing unhealthy levels of ground-level ozone (a form of smog). This means that there is a cycle with air pollution causing global warming and global warming worsening air pollution. These are the two reasons that air pollution and climate change are closely correlated. 
+</div>
+<div class="boxes5" style="font-size: 16px;text-align: justify; padding: 5px;">
+  <b>Why is combating Air Pollution important?</b>
+  <br>
+  The first and most important reason for combating air pollution is its health implications. Air pollution is currently the biggest environmental risk for early death according to the Environmental Defense Fund (EDF). It is responsible for over 6 million premature deaths from heart attacks, strokes, diabetes and respiratory diseases. That number is more than the number of deaths from AIDS, tuberculosis and malaria combined. There have been research studies that say long-term exposure to air pollution can also increase your likelihood of developing emphysema (lung condition) more than smoking a whole pack of cigarettes per day. This danger is caused by particle matters (PM) which are small airborne particles such as drops of liquid, dust or toxic pollutants. Coarse PMs like PM10 (less than 10 microns in diameter) are not as dangerous. These particles cause nasal and upper respiratory health problems which aren’t too serious. However fine PMs like PM2.5 (less than 2.5 microns in health) can pose serious and fatal health effects. According to the EDF, these health effects are “heart attacks, strokes, asthma, and bronchitis, as well as premature death from heart ailments, lung disease and cancer.” Fine PMs are more dangerous since they have the ability to penetrate deeper into your lungs. When we look at this information it is very clear that more action needs to be taken immediately. Other than consequences for our health, air pollution can affect ecological sources and animals. Water quality, soils and plants are all negatively affected by air pollution. For instance, Ozone causes severe injury and reduces the growth of a wide variety of plant species. Acidification, eutrophication, and changes in soil and water are linked to high levels of sulphur and nitrogen compounds in the atmosphere. For animals, metals like mercury bioaccumulate in the food chain, causing behavioural and reproductive effects in wildlife like fish and birds. Overall, we see that it is certainly crucial for us to take urgent action to reduce air pollution, not just for us but for animals and plants as well. 
+</div>
+<div class="boxes6">
+  <img src="https://who.int/airpollution/infographics/Air-pollution-INFOGRAPHICS-English-4-1200px.jpg?ua=1" style="width: 585px;height: 570px; margin-left: 10px; margin-top: 10px;">
+</div>
+<div class="boxes7">
+   <img src="https://www.who.int/airpollution/infographics/Air-pollution-INFOGRAPHICS-English-6-1200px.jpg?ua=1" style="width: 585px;height: 570px; margin-left: 10px; margin-top: 10px;">
+</div>
+<div><p style="color: #cfccc4; background-color: #cfccc4; margin-top: 3350px; margin-left: 612px; margin-bottom: 0px;">You found the Easter Egg!</p></div><!--Why not have a bit of fun?-->
+<!-- Slideshow container -->
+<div class="boxes8">
+<div id="demo" class="carousel slide" data-ride="carousel" style="height: 90%; width: 100%;">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.natgeofe.com/n/e5d9c3f1-d1ec-482f-9f21-289380be01ae/greenhouse-gases-reference.jpg?w=1200" alt="Gas" style="height: 900px; width: 1440px;">
+      <div class="carousel-caption">
+      <h5 style="color: white;">Greenhouse gases being emitted from a factory</h5>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="http://prod-upp-image-read.ft.com/650913c2-32f4-11e8-b5bf-23cb17fd1498" alt="Smog" style="height: 900px; width: 1440px;">
+      <div class="carousel-caption">
+      <h5 style="color: white;">Smog in Beijing</h5>
+  </div>
+</map>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.thoughtco.com/thmb/3A_T9k7S82pZvB_52a0w0ez6QVU=/2125x1411/filters:fill(auto,1)/GettyImages-117452090-140805a1995e426b912661a3fda68089.jpg" style="height: 900px; width: 1440px;" alt="Mercury">
+      <div class="carousel-caption">
+      <h5 style="color: grey;">Mercury; a toxic air pollutant</h5>
+  </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+</div>
+</body>
+</html>
